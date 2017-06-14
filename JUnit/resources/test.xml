@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+   <artifactId>GDDResources</artifactId>
+   <modelVersion>4.0.0</modelVersion>
+   <parent>
+      <groupId>com.avocent</groupId>
+      <artifactId>common-configurations</artifactId>
+      
+   </parent>
+   <groupId>com.avocent.commonplatform.cps.symbols</groupId>
+   <NAME>DHANANJAI</NAME>
+   <version>4.0.0.129-SNAPSHOT</version>
+   <description>Resources for init data strings</description>
+   <packaging>DHANANJAI jar</packaging>
+   <properties>
+   <src>${basedir}</src>
+   <dst>${basedir}/target/classes</dst>
+ </properties>
+</project>

@@ -1,0 +1,8 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ns="http://example.com/">
+    <soapenv:Body>
+        <ns:getNumberResponse>
+            <number>123456789</number>
+            <myName>DHANANJAI</myName>
+        </ns:getNumberResponse>
+    </soapenv:Body>
+</soapenv:Envelope>

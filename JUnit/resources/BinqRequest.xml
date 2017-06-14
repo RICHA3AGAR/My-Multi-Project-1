@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+	<soap:Header>
+		<wsse:Security soap:mustUnderstand="1" xmlns:wsse="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd">
+			<saml2:Assertion Version="2.0" ID="SAML-a3af078b-1414-4b4a-b2ed-805431da7ef5" IssueInstant="2017-05-01T19:21:46Z" xmlns:saml2="urn:oasis:names:tc:SAML:2.0:assertion">
+				<saml2:Issuer>SecurityGateway</saml2:Issuer>
+				<Signature xmlns="http://www.w3.org/2000/09/xmldsig#">
+					<SignedInfo>
+						<CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/>
+						<SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha256"/>
+						<Reference URI="#SAML-a3af078b-1414-4b4a-b2ed-805431da7ef5">
+							<Transforms>
+								<Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/>
+								<Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/>
+							</Transforms>
+							<DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"/>
+							<DigestValue>5iUwbJX+w5IW44JIPeVIED9KJE1C/RCcqEbmSd5vRcI=</DigestValue>
+						</Reference>
+					</SignedInfo>
+					<SignatureValue>r7DTol60yS9lmVYZyBUOSMqyxnoVYWQiN5l1Y5P0rTZ8BCdGA2iWQZJ3qVe8l9VtvadBwDuTTFb6PK+uVVu9YwHJ1TLWQA1m1CFExNMx+gUVbb1bF5xkvYFi9a4TCPNaSekWrnn9CwbKAddqKu2n9Id7dFj/xikz8mVEI29oGoFYa8wS/ysxdd+g7FW4eRGmWok8Kjk4WsHWVJw0nob5FTnXHFMMhWyMgw6T1G8p8YDBjlImUP56g2PzJALhf42FUUihRWR4QJhY1OzvOEexDQkZ6J0NowKdvqaGJSJSdNweh9HgQRTJUGe9aXbomXwv9MVvo7XRUU1zKdVQkm73sg==</SignatureValue>
+					<KeyInfo>
+						<X509Data>
+							<X509Certificate>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</X509Certificate>
+							<X509IssuerSerial>
+								<X509IssuerName>CN=Symantec Class 3 Secure Server CA - G4, OU=Symantec Trust Network, O=Symantec Corporation, C=US</X509IssuerName>
+								<X509SerialNumber>70976523448324969927442217405489867116</X509SerialNumber>
+							</X509IssuerSerial>
+						</X509Data>
+					</KeyInfo>
+				</Signature>
+				<saml2:Subject>
+					<saml2:NameID Format="urn:oasis:names:tc:SAML:1.1:nameid-format:unspecified" NameQualifier="HCSC">cn=IMI0001,ou=people,o=hcsc</saml2:NameID>
+					<saml2:SubjectConfirmation Method="urn:oasis:names:tc:SAML:2.0:cm:bearer">
+						<saml2:SubjectConfirmationData NotBefore="2017-05-01T19:20:46Z" NotOnOrAfter="2017-05-02T07:22:46Z"/>
+					</saml2:SubjectConfirmation>
+				</saml2:Subject>
+				<saml2:Conditions NotBefore="2017-05-01T19:20:46Z" NotOnOrAfter="2017-05-02T07:22:46Z"/>
+				<saml2:AuthnStatement AuthnInstant="2017-05-01T19:21:46Z" SessionNotOnOrAfter="2017-05-02T07:22:46Z">
+					<saml2:SubjectLocality Address="10.134.44.20"/>
+					<saml2:AuthnContext>
+						<saml2:AuthnContextClassRef>urn:oasis:names:tc:SAML:2.0:ac:classes:Password</saml2:AuthnContextClassRef>
+					</saml2:AuthnContext>
+				</saml2:AuthnStatement>
+				<saml2:AttributeStatement>
+					<saml2:Attribute Name="cn" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:unspecified">
+						<saml2:AttributeValue>uid=MPUI-FIND_CLIENTMEMBER,cn=Member Profile User Interface,ou=resources,o=hcsc</saml2:AttributeValue>
+					</saml2:Attribute>
+					<saml2:Attribute Name="cn" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:unspecified">
+						<saml2:AttributeValue>uid=MPUI-GET_MEMBERPROFILE,cn=Member Profile User Interface,ou=resources,o=hcsc</saml2:AttributeValue>
+					</saml2:Attribute>
+					<saml2:Attribute Name="cn" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:unspecified">
+						<saml2:AttributeValue>uid=MPUI-GET_CLIENTMEMBER,cn=Member Profile User Interface,ou=resources,o=hcsc</saml2:AttributeValue>
+					</saml2:Attribute>
+					<saml2:Attribute Name="cn" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:unspecified">
+						<saml2:AttributeValue>uid=MPUI-GET_MEMBERSHIP,cn=Member Profile User Interface,ou=resources,o=hcsc</saml2:AttributeValue>
+					</saml2:Attribute>
+					<saml2:Attribute Name="cn" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:unspecified">
+						<saml2:AttributeValue>uid=MPUI-GET_MEMBER,cn=Member Profile User Interface,ou=resources,o=hcsc</saml2:AttributeValue>
+					</saml2:Attribute>
+					<saml2:Attribute Name="cn" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:unspecified">
+						<saml2:AttributeValue>uid=MPUI-GET_CLIENT,cn=Member Profile User Interface,ou=resources,o=hcsc</saml2:AttributeValue>
+					</saml2:Attribute>
+					<saml2:Attribute Name="cn" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:unspecified">
+						<saml2:AttributeValue>uid=MPUI-CALL_SERVICE,cn=Member Profile User Interface,ou=resources,o=hcsc</saml2:AttributeValue>
+					</saml2:Attribute>
+					<saml2:Attribute Name="cn" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:unspecified">
+						<saml2:AttributeValue>uid=MPUI-BASIC_INQUIRY,cn=Member Profile User Interface,ou=resources,o=hcsc</saml2:AttributeValue>
+					</saml2:Attribute>
+					<saml2:Attribute Name="cn" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:unspecified">
+						<saml2:AttributeValue>uid=CS-1-SG_HALLMARK,cn=Common Services~CS-1,ou=resources,o=hcsc</saml2:AttributeValue>
+					</saml2:Attribute>
+					<saml2:Attribute Name="cn" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:unspecified">
+						<saml2:AttributeValue>uid=CS-1-SG_WORKERSCHOICE,cn=Common Services~CS-1,ou=resources,o=hcsc</saml2:AttributeValue>
+					</saml2:Attribute>
+					<saml2:Attribute Name="cn" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:unspecified">
+						<saml2:AttributeValue>uid=CS-1-SG_FEP,cn=Common Services~CS-1,ou=resources,o=hcsc</saml2:AttributeValue>
+					</saml2:Attribute>
+					<saml2:Attribute Name="cn" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:unspecified">
+						<saml2:AttributeValue>uid=CS-1-SG_LABOR,cn=Common Services~CS-1,ou=resources,o=hcsc</saml2:AttributeValue>
+					</saml2:Attribute>
+					<saml2:Attribute Name="cn" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:unspecified">
+						<saml2:AttributeValue>uid=CS-1-SG_EMPLOYEE,cn=Common Services~CS-1,ou=resources,o=hcsc</saml2:AttributeValue>
+					</saml2:Attribute>
+					<saml2:Attribute Name="cn" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:unspecified">
+						<saml2:AttributeValue>uid=CS-1-SG_PACTIV,cn=Common Services~CS-1,ou=resources,o=hcsc</saml2:AttributeValue>
+					</saml2:Attribute>
+					<saml2:Attribute Name="cn" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:unspecified">
+						<saml2:AttributeValue>uid=CS-1-SG_ICHIP,cn=Common Services~CS-1,ou=resources,o=hcsc</saml2:AttributeValue>
+					</saml2:Attribute>
+					<saml2:Attribute Name="cn" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:unspecified">
+						<saml2:AttributeValue>uid=SG_DPTCORR,cn=Common Services~CS-1,ou=resources,o=hcsc</saml2:AttributeValue>
+					</saml2:Attribute>
+					<saml2:Attribute Name="cn" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:unspecified">
+						<saml2:AttributeValue>uid=CS-1-SG_DPTCORR,cn=Common Services~CS-1,ou=resources,o=hcsc</saml2:AttributeValue>
+					</saml2:Attribute>
+					<saml2:Attribute Name="cn" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:unspecified">
+						<saml2:AttributeValue>uid=SG_RETAIL,cn=Common Services~CS-1,ou=resources,o=hcsc</saml2:AttributeValue>
+					</saml2:Attribute>
+					<saml2:Attribute Name="cn" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:unspecified">
+						<saml2:AttributeValue>uid=CS-1-SG_RETAIL,cn=Common Services~CS-1,ou=resources,o=hcsc</saml2:AttributeValue>
+					</saml2:Attribute>
+					<saml2:Attribute Name="cn" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:unspecified">
+						<saml2:AttributeValue>uid=CS-1-SG_HARPO,cn=Common Services~CS-1,ou=resources,o=hcsc</saml2:AttributeValue>
+					</saml2:Attribute>
+				</saml2:AttributeStatement>
+			</saml2:Assertion>
+		</wsse:Security>
+	</soap:Header>
+	<soap:Body>
+		<a:Get xmlns:a="http://www.hcsc.com/ClientAgreement/inquiry/v4.0" xmlns:b="http://www.hcsc.com/health/ClientAgreement/v4.0">
+			<a:GetIdentifiers>
+				<a:ProviderInfo>
+					<b:ProviderCategory xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+					<b:ProviderIsInState xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+					<b:ProviderNetworkTier xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+					<b:ProviderNumber>0</b:ProviderNumber>
+					<b:ProviderNetwork xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+					<b:ProviderNpi xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+					<b:ProviderPlaceOfTreatment xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+					<b:ProviderSolicited>false</b:ProviderSolicited>
+					<b:ProviderSpeciality xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+					<b:ProviderType xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+					<b:ProviderTaxId>0</b:ProviderTaxId>
+					<b:UnknownProviderIsValid xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+					<b:DefaultPointOfServiceInNetwork xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+					<b:BenefitCategory xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+					<b:ProviderTierCode xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+					<b:ProviderNetworkCodeList xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+					<b:ServiceRelationshipNetwork xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+					<b:PintoLineStatus xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+					<b:HcscDiscountArea xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+					<b:ProviderDesignationCodeList xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+					<b:ProviderIsPrimary xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+				</a:ProviderInfo>
+
+				<a:MemberInfo>
+					<b:AccountNumber>444402</b:AccountNumber>
+					<b:BlueStarAccountNumber>444402</b:BlueStarAccountNumber>
+					<b:BenefitAgreementNumber>15</b:BenefitAgreementNumber>
+					<b:CorporateEntityCode>IL1</b:CorporateEntityCode>
+					<b:CoverageAgreementId>0</b:CoverageAgreementId>
+					<b:PlanId>0</b:PlanId>
+					<b:QueryDate>2017-03-08</b:QueryDate>
+					<b:GroupNumber>444403</b:GroupNumber>
+					<b:SectionNumber>0000</b:SectionNumber>
+					<b:SourceSystemCode>BLUESTAR</b:SourceSystemCode>
+					<b:SubscriberId>000820194151</b:SubscriberId>
+					<b:SubscriberPartyId>195577057</b:SubscriberPartyId>
+					<b:VariantComponentIdentifier xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+					<b:MemberImcCode>100</b:MemberImcCode>
+				</a:MemberInfo>
+
+				<a:LegacyMemberInfo>
+					<b:AlphaPrefix/>
+					<b:ClaimApprovalCode/>
+					<b:MemberIsInState>Y</b:MemberIsInState>
+					<b:MemberCpoLocation xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+					<b:callSequenceNumber xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+					<b:MemberIsAuthorized xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+					<b:NetworkPlanCode/>
+					<b:NewDependentSwitch/>
+					<b:PackageCode>000</b:PackageCode>
+					<b:MemberProductType/>
+					<b:MemberZipCode>
+						<b:USZipCodeBody/>
+					</b:MemberZipCode>
+					<b:MemberNetworkCode xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+					<b:BoeingPlanCode xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+				</a:LegacyMemberInfo>
+				<a:PatientInfoList>
+
+					<a:PatientInfo>
+						<b:PatientFirstName>FILIBERTO</b:PatientFirstName>
+						<b:PatientLastName>REYES</b:PatientLastName>
+						<b:GroupNumber>162387</b:GroupNumber>
+						<b:SectionNumber>0007</b:SectionNumber>
+						<b:RelationShipCd>1</b:RelationShipCd>
+						<b:MemberPartyId>195577057</b:MemberPartyId>
+						<b:Gender>M</b:Gender>
+						<b:PatientPackageCd>000</b:PatientPackageCd>
+						<b:MemberMedicareEligibility>0</b:MemberMedicareEligibility>
+						<b:PatientDob>1976-08-22</b:PatientDob>
+						<b:BoeingPlanCode xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+					</a:PatientInfo>
+
+				</a:PatientInfoList>
+
+				<a:ServiceHierarchyInfoList>
+					<a:CorrelatedServiceHierarchyInfo>
+						<a:CorrelationId>0</a:CorrelationId>
+						<a:ServiceHierarchyInfo>
+							<b:DiagnosisCode xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+							<b:EmergencyType xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+							<b:Keyword xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+							<b:PlaceOfTreatment xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+							<b:ProcedureCode xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+							<b:ProviderCategory xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+							<b:AlternateCoverageIdentifier xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+							<b:ServiceIdentifier xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+						</a:ServiceHierarchyInfo>
+					</a:CorrelatedServiceHierarchyInfo>
+				</a:ServiceHierarchyInfoList>
+
+				<a:FilterList>
+					<a:FilterAgeQualifiers>false</a:FilterAgeQualifiers>
+					<a:FilterBXPerferredProviderAtEmployeeFacility>false</a:FilterBXPerferredProviderAtEmployeeFacility>
+					<a:FilterNonCostSharingBenefits>false</a:FilterNonCostSharingBenefits>
+				</a:FilterList>
+
+			</a:GetIdentifiers>
+			<a:GetResponseForm>
+				<!--            <a:STNBenefitList/>-->
+
+
+				<a:SourceIndicator/>
+				<a:TaggedBenefitSummary>
+					<a:TaggedSummaryElementList/>
+				</a:TaggedBenefitSummary>
+				<a:TaggedSpendingSummary>
+					<a:TaggedSummaryElementList/>
+				</a:TaggedSpendingSummary>
+			</a:GetResponseForm>
+		</a:Get>
+	</soap:Body>
+</soap:Envelope>
